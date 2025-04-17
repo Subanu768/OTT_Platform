@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './Login.css'
-import { validateSignInValues, validateSignUpValues } from "../utils/Validate.jsx";
+import { validateSignInValues, validateSignUpValues } from "../utils/validate";
 import logo from '../../assets/logo.png'
 import { login, signup } from '../../firebase'
 import netflix_spinner from '../../assets/netflix_spinner.gif'
 import {useDispatch} from 'react-redux'
+
 const Login = () => {
   let [isSignInForm, setIsSignInForm] = useState(true);
   let [errorMesssage, setErrorMessage] = useState(null);
@@ -86,7 +87,7 @@ const Login = () => {
       <img src={logo} alt="" className='login-logo' />
       <div className="body">
       <div className="background-color">
-        <Header />
+        <Home/>
         <div className="SignIn-page">
           <div className="SignIn-container">
             <form onSubmit={(a) => a.preventDefault()} className="SignIn-form">
