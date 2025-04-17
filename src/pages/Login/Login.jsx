@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Login.css'
-import { validateSignInValues, validateSignUpValues } from "../utils/validate";
+import { validateSignInValues, validateSignUpValues } from "../utils/Validate.jsx";
 import logo from '../../assets/logo.png'
 import { login, signup } from '../../firebase'
 import netflix_spinner from '../../assets/netflix_spinner.gif'
